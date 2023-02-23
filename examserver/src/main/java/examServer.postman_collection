@@ -1,0 +1,1124 @@
+{
+	"info": {
+		"_postman_id": "9e11d1ff-832f-4ffc-b8ff-9cbb5c83135e",
+		"name": "examServer Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25448357"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "Get all category",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE2OTc2MiwiaWF0IjoxNjc3MTMzNzYyfQ.828vnSUjyykQSaRQ8rf0R6tUSuGK3qRUa-WmJ6Ys-OU",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/admin/category/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Specific category by cid",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE2OTc2MiwiaWF0IjoxNjc3MTMzNzYyfQ.828vnSUjyykQSaRQ8rf0R6tUSuGK3qRUa-WmJ6Ys-OU",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/category/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"Basic Java\",\r\n    \"description\":\"all basic question\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/admin/category/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update into existing category Details",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \r\n    \"cid\": 1,\r\n    \"title\": \"Programming Language php\",\r\n    \"description\": \"questions for technical knowledge of testing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/admin/category/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Category by using cid",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/category/26",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"category",
+										"26"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Quiz",
+					"item": [
+						{
+							"name": "Get Quiz by qid",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/quiz/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"quiz",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Quizzes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/quiz/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"quiz",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Active Quizzes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/quiz/active/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"quiz",
+										"active",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GEt all active quizzes by cid",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/admin/quiz/category/active/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"quiz",
+										"category",
+										"active",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all quizzes by cid",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:9090/admin/quiz/cid/1",
+									"host": [
+										"localhost"
+									],
+									"port": "9090",
+									"path": [
+										"admin",
+										"quiz",
+										"cid",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Quiz",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"cloud security.\",\r\n    \"description\":\"This quiz contains question of types of cloud services and security.\",\r\n    \"maxMarks\":\"200\",\r\n    \"numberOfQuestion\":\"20\",\r\n    \"active\":\"true\",\r\n    \"category\":{\r\n        \"cid\":9\r\n        \r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/quiz/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"quiz",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Quiz",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"qId\":\"28\",\r\n    \"title\":\"Cloud Services\",\r\n    \"description\":\"This quiz contains question of Basic cloud services and their models.\",\r\n    \"maxMarks\":\"200\",\r\n    \"active\":\"true\",\r\n    \"numberOfQuestion\":\"20\",\r\n    \"category\":{\r\n        \"cid\":1\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/admin/quiz/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"quiz",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Quiz by qid",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/quiz/28",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"quiz",
+										"28"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Question",
+					"item": [
+						{
+							"name": "Get Quiz by qid",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/question/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"question",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all question by quizid",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY3NzE3MDY2MCwiaWF0IjoxNjc3MTM0NjYwfQ.1jLk9zf343H6w_y4EJpjSL6Vao71RUbso57s3s11iGc",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/question/quiz/all/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"question",
+										"quiz",
+										"all",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update details of Existing Question",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDczc2MTAiLCJyb2xlcyI6IlJPTEVfQURNSU4iLCJleHAiOjE2NzcwOTg5MTUsImlhdCI6MTY3NzA2MjkxNX0.hdd4gxThXg6ALajCOY2IIS1thznGhQt87ktbzDtPXqU",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\":\"{Which of the following is a type of cloud computing service}?\",\r\n    \"option1\":\"Service-as-a-Software (SaaS)\",\r\n    \"option2\":\"Software-and-a-Server (SaaS)\",\r\n    \"option3\":\"Software-as-a-Service (SaaS)\",\r\n    \"option4\":\"Software-as-a-Server (SaaS)\",\r\n    \"answer\":\"Software-as-a-Service (SaaS)\",\r\n    \"image\":\"java.png\",\r\n    \"quiz\":{\r\n        \"qId\":8\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/admin/question/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"question",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "question posted",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDczc2MTAiLCJyb2xlcyI6IlJPTEVfQURNSU4iLCJleHAiOjE2NzcwOTg5MTUsImlhdCI6MTY3NzA2MjkxNX0.hdd4gxThXg6ALajCOY2IIS1thznGhQt87ktbzDtPXqU",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n    {\r\n    \"content\":\"Who is the father ?\",\r\n    \"image\":\"java.png\",\r\n    \"option1\":\" Sharon B. Codd\",\r\n    \"option2\":\"Edgar Frank Codd\",\r\n    \"option3\":\"J.C.R. Licklider\",\r\n    \"option4\":\" Charles Bachman\",\r\n    \"answer\":\"J.C.R. Licklider\",\r\n    \"quiz\":{\r\n        \"qId\":8\r\n    }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/admin/question/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"question",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete question by qid",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDczc2MTAiLCJyb2xlcyI6IlJPTEVfQURNSU4iLCJleHAiOjE2NzcwOTg5MTUsImlhdCI6MTY3NzA2MjkxNX0.hdd4gxThXg6ALajCOY2IIS1thznGhQt87ktbzDtPXqU",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/admin/question/20",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"admin",
+										"question",
+										"20"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Admin token generate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "test",
+								"value": "login",
+								"type": "default"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"yami\",\r\n    \"password\":\"yami2603\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJWYW5zaGlrYSIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcwOTAxMjAsImlhdCI6MTY3NzA1NDEyMH0.MzPe84OiZmfR0XdAWeH5jgx87wcSnq3jNdi5gpDzrOI",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "test",
+								"value": "login",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\":\"khubudidi\",\r\n   \"password\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "get user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/user/yami2603",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"yami2603"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "test",
+										"value": "login",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"username\":\"yaminiji\",\r\n\"firstname\":\"yamini\",\r\n\"lastname\":\"Bendale\",\r\n\"password\":\"78945\",\r\n\"email\":\"ynb@123\",\r\n\"profile\":\"hello.jpg\",\r\n\"phone\":\"7896212\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete user",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/user/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update user details",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "test",
+										"value": "login",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"username\":\"yamini\",\r\n\"firstname\":\"yami\",\r\n\"lastname\":\"bendale\",\r\n\"password\":\"78945\",\r\n\"email\":\"ynb@123\",\r\n\"profile\":\"test.jpg\",\r\n\"phone\":\"7896212\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "category",
+					"item": [
+						{
+							"name": "get category by quizid",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YW5zaGlrYSIsImV4cCI6MTY3NjY2ODc3OCwiaWF0IjoxNjc2NjMyNzc4fQ.a6gfXfy_JSe_P4bJu2R7YbKc6z6I6EFPfHIbRBYHCTs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/category/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all category",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/category/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"category",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "question",
+					"item": [
+						{
+							"name": "get all question by quizId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/question/quiz/all/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"question",
+										"quiz",
+										"all",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all question",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/question/quiz/all/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"question",
+										"quiz",
+										"all",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get question by question id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/question/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"question",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "quiz",
+					"item": [
+						{
+							"name": "get quiz by category id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/quiz/cid/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"quiz",
+										"cid",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all quiz",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5YW1pMjYwMyIsInJvbGVzIjoiUk9MRV9OT1JNQUwiLCJleHAiOjE2NzcxMjI3MzQsImlhdCI6MTY3NzA4NjczNH0.DoDCrhI4zBJG1K-rUltJfwg79VlW_NuPRMxDk2j5vrA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/quiz/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"quiz",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
